@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding ="20dp"
+    tools:context=".HomeFragment">
+
+    <TextView
+        android:id="@+id/home_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/status" />
+
+    <!-- an empty view used as a width divider -->
+    <View
+        android:id="@+id/strut"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true" />
+
+    <View
+        android:id="@+id/tank1"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_alignRight="@id/strut"
+        android:layout_alignParentLeft="true"/>
+
+    <View
+        android:id="@+id/tank2"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_alignLeft="@id/strut"
+        android:layout_alignParentRight="true"/>
+
+    <View
+        android:id="@+id/tank3"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/tank1"
+        android:layout_alignRight="@id/strut"
+        android:layout_alignParentLeft="true"/>
+
+    <View
+        android:id="@+id/tank4"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/tank2"
+        android:layout_alignLeft="@id/strut"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tank3"
+        android:layout_alignParentLeft="true"
+        android:paddingTop="15dp"
+        android:text="@string/location"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/location"
+        android:layout_alignParentLeft="true"
+        android:paddingTop="15dp"
+        android:text="@string/temperature"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/temperature_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/location"
+        android:layout_alignParentRight="true"
+        android:paddingTop="15dp"
+        android:paddingRight="15dp"
+        android:textSize="16sp"/>
+
+
+    <TextView
+        android:id="@+id/smoke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/temperature"
+        android:layout_alignParentLeft="true"
+        android:paddingTop="15dp"
+        android:text="@string/smoke"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/smoke_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/temperature"
+        android:layout_alignParentRight="true"
+        android:paddingTop="15dp"
+        android:paddingRight="15dp"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/waterline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/smoke"
+        android:layout_alignParentLeft="true"
+        android:paddingTop="15dp"
+        android:text="@string/waterline"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/waterline_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/smoke"
+        android:layout_alignParentRight="true"
+        android:paddingTop="15dp"
+        android:paddingRight="15dp"
+        android:textSize="16sp"/>
+
+</RelativeLayout>
